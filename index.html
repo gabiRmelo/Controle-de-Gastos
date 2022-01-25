@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Controle de Gastos</title>
+        <meta charset="UTF-8">
+
+        <link rel="shortcut icon" type="imagex/png" href="./assets/pig.ico">
+
+        <link rel="stylesheet" type="text/css" href="./assets/reset.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Mochiy+Pop+P+One&family=Neonderthaw&display=swap" rel="stylesheet">
+        
+
+        <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    </head> 
+
+    <body>
+        <header>
+            <h1>Controle de Gastos</h1>
+        </header>
+
+        <main>
+            <!--Informações-->
+            <section class="InsercaoDeDados">
+                                 
+                <div class="InputGanhos"> 
+                    <h2>Nome ganho</h2>
+                    <input type="text" class="InputGanhoNome">
+                                   
+                    <h2>Valor ganho</h2>
+                    <input type="number" class="InputGanhoValor">
+
+                    <button>Inserir ganho</button>
+                </div>
+                    
+               
+                <div class="InputDespesas"> 
+                    <h2>Nome despesa</h2>
+                    <input type="text" class="InputDespesaNome" onfocus="this.value='';">
+                                   
+                    <h2>Valor despesa</h2>
+                    <input type="number" class="InputDespesaValor">
+
+                    <button>Inserir despesa</button>
+                </div>
+
+                <div class="containerDespesas">
+                    <div class="CDCabecalho">
+                        <p class="CabecalhoTD">Título</p>
+                        <p>Valor</p>
+                    </div>
+
+                    <ul class="CDLista">
+                       
+                    </ul>
+                    
+                </div>
+
+            </section>
+            <!--Resultados-->
+            <section class="OutputResultados">
+                <div class="ResultadoGanhos">
+                    <h3>Ganhos</h3>
+                    <p>+ R$ 0</p>
+                </div>
+
+                <div class="ResultadoDespesas">
+                    <h3>Despesas</h3>
+                    <p>- R$ 0</p>
+                </div>
+
+                <div class="ResultadoSaldo">
+                    <h3>Saldo</h3>
+                    <p>R$ 0</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <marquee behavior="alternate" scrollamount="10">Projeto desenvolvido por Gabriela Rocha Melo durante o #ElasCodam | Kenzie + Dupla Tech</marquee>
+        </footer>
+
+        <script src="./assets/script.js"></script>
+
+    </body>
+</html>
